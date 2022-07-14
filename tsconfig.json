@@ -2,11 +2,16 @@
   "compilerOptions": {
     "target": "esnext",
     "module": "commonjs",
-    "lib": ["es2022"],
+    "sourceMap": true,
+    "lib": [
+      "es2022"
+    ],
     "outDir": ".out",
     "rootDir": "bin",
     "strict": true,
-    "types": ["node"],
+    "types": [
+      "node"
+    ],
     "esModuleInterop": true,
     "resolveJsonModule": true
   }
