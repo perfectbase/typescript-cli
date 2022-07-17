@@ -9,6 +9,7 @@ RUN npm ci
 
 # Copy the rest of the files and compile it to javascript
 COPY . .
-RUN npx tsc
+RUN npx tsc \
+    && chmod +x .out/index.js
 
-ENTRYPOINT [ "node", ".out/index.js" ]
+ENTRYPOINT [ ".out/index.js" ]
